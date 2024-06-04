@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#tools, #color-controls, #canvas-controls, #file-controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#tools button, #color-controls input[type="color"], #canvas-controls input[type="number"] {
+    margin-right: 5px;
+}
+
+#color-controls label {
+    margin-right: 10px;
+}
+
+canvas {
+    border: 1px solid #000;
+}
+
+#feedback {
+    text-align: center;
+    margin-top: 10px;
+}

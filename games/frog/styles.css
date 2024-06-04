@@ -1,0 +1,48 @@
+/* styles.css */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    font-family: Arial, sans-serif;
+}
+
+#gameCanvas {
+    border: 1px solid white;
+    display: none;
+}
+
+#mainMenu, #leaderboard, #gameOverDiv {
+    text-align: center;
+    color: white;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#leaderboardList {
+    list-style: none;
+    padding: 0;
+}
+
+#leaderboardList li {
+    padding: 5px 0;
+}
+
+#leaderboard {
+    display: none; /* Hide leaderboard by default */
+}

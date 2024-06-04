@@ -1,0 +1,26 @@
+<!-- frog.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frog Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <audio id="backgroundMusic" src="frogbeat.mp3" loop></audio>
+    <div id="mainMenu">
+        <h1>Main Menu</h1>
+        <button id="playButton">Play</button>
+        <button id="leaderboardButton">Leaderboard</button>
+        <button id="quitButton">Quit</button>
+    </div>
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <div id="leaderboard">
+        <h1>Leaderboard</h1>
+        <ul id="leaderboardList"></ul>
+        <button id="backButton">Back</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

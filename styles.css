@@ -1,0 +1,210 @@
+/* Centering iframe container */
+.iframe-container {
+    display: flex;
+    justify-content: center; /* Horizontally centers the iframe */
+    align-items: center; /* Vertically centers the iframe */
+    height: 100%; /* Adjust as needed */
+}
+
+.content-section {
+    text-align: center; /* Centers text content within the section */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000000;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.content-section {
+    display: none;
+    padding: 50px 20px;
+}
+
+.active {
+    display: block;
+}
+
+#news-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.news-item {
+    background-color: rgba(128, 128, 128, 0.5); /* Transparent grey */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /*  Add shadow for effect */
+	max-width: 800px;
+    margin-left: auto; /* Center align the items */
+    margin-right: auto; /* Center align the items */
+}
+
+.news-item h3 {
+    margin-bottom: 10px;
+}
+
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+}
+
+
+#blog-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.blog-item {
+    background-color: rgba(128, 128, 128, 0.5); /* Transparent grey */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for effect */
+    margin-bottom: 20px;
+	max-width: 800px;
+    margin-left: auto; /* Center align the items */
+    margin-right: auto; /* Center align the items */
+}
+
+.blog-item h3 {
+    margin-bottom: 10px;
+}
+
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.social-media a:hover {
+    color: #1e90ff;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1e90ff;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #104f7f;
+}
+
+
+
+/* Add a fade-in animation for content sections */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.content-section {
+    display: none;
+    padding: 50px 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.active {
+    display: block;
+}
+
+
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}

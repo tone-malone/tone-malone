@@ -1,0 +1,12 @@
+[
+    {
+        "title": "First Blog Post",
+        "date": "2024-05-01",
+        "content": "This is the content of the first blog post."
+    },
+    {
+        "title": "Second Blog Post",
+        "date": "2024-05-10",
+        "content": "This is the content of the second blog post."
+    }
+]

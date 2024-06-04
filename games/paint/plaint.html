@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Art Drawing App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="controls">
+        <!-- Tool buttons -->
+        <div id="tools">
+            <button id="brush">Brush</button>
+            <button id="line">Line</button>
+            <button id="fill">Fill</button>
+            <button id="spray">Spray</button>
+            <button id="rectangle-select">Rectangle Select</button>
+            <button id="circle-select">Circle Select</button>
+            <button id="lasso-select">Lasso Select</button>
+            <button id="wand-select">Wand Select</button>
+            <button id="copy">Copy</button>
+            <button id="paste">Paste</button>
+            <button id="pan">Pan</button>
+            <button id="rotate-selection">Rotate Selection</button>
+            <button id="scale-selection">Scale Selection</button>
+            <button id="skew-selection">Skew Selection</button>
+            <button id="horizontal-symmetry">Horizontal Symmetry</button>
+            <button id="vertical-symmetry">Vertical Symmetry</button>
+            <button id="clear-selection">Clear Selection</button>
+            <button id="grid-toggle">Toggle Grid</button>
+        </div>
+        <!-- Color controls -->
+        <div id="color-controls">
+            <input type="color" id="color-picker" value="#000000">
+            <div id="hsv-sliders">
+                <label for="hue">Hue</label>
+                <input type="range" id="hue" min="0" max="360">
+                <label for="saturation">Saturation</label>
+                <input type="range" id="saturation" min="0" max="100">
+                <label for="value">Value</label>
+                <input type="range" id="value" min="0" max="100">
+            </div>
+            <div id="predefined-palettes">
+                <!-- Predefined color palettes buttons -->
+            </div>
+        </div>
+        <!-- Canvas controls -->
+        <div id="canvas-controls">
+			<input type="number" id="canvas-width" placeholder="Width">
+			<input type="number" id="canvas-height" placeholder="Height">
+            <button id="resize-canvas">Resize Canvas</button>
+            <button id="zoom-in">Zoom In</button>
+            <button id="zoom-out">Zoom Out</button>
+            <button id="clear-canvas">Clear Canvas</button>
+        </div>
+        <!-- File controls -->
+        <div id="file-controls">
+            <input type="file" id="image-upload" accept="image/*">
+            <button id="save-image">Save</button>
+            <button id="undo">Undo</button>
+            <button id="redo">Redo</button>
+        </div>
+    </div>
+    <canvas id="drawing-canvas" width="1024" height="1024"></canvas>
+    <div id="feedback"></div>
+    <script src="app.js"></script>
+</body>
+</html>
