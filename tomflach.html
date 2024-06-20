@@ -7,103 +7,145 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#" data-section="music">Music</a></li>
-            <li><a href="#" data-section="online-games">Online Games</a></li>
-            <li><a href="#" data-section="offical-games">Official Games</a></li>
-            <li><a href="#" data-section="news">News</a></li>
-            <li><a href="#" data-section="blog">Blog</a></li>
-            <li><a href="#" data-section="gallery">Gallery</a></li>
-            <li><a href="#" data-section="about">About</a></li>
-            <li><a href="#" data-section="contact">Contact</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#music">Music</a></li>
+                <li><a href="#online-games">Online Games</a></li>
+                <li><a href="#official-games">Official Games</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="dark-mode-toggle">Toggle Dark Mode</button></li>
+            </ul>
+        </nav>
+    </header>
 
-    <section id="music" class="content-section">
-        <h2>Music</h2>
-        <div class="iframe-container">
-            <iframe src="https://open.spotify.com/embed/artist/0rmNOdMGXl6RgWjxutEhNu" width="640" height="480" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-        </div>
-    </section>
-
-    <section id="online-games" class="content-section">
-        <h2>Online Games</h2>
-        <div>
-            <h3>Frog</h3>
-            <p>The Frog game...</p>
-            <a href="https://tone-malone.github.io/games/frog/frog.html">Play Frog Game</a>
-        </div>
-    </section>
-
-    <section id="offical-games" class="content-section">
-        <h2>Official Games</h2>
-        <div>
-            <h3>Detective Dart - Lost Relics</h3>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL9OkNJHdPlnp7t_OhFwoSZaS0BB7Jt3qD" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-        <div>
-            <h3>The Adventures of Captain Kane</h3>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL9OkNJHdPlnoh0Wsppw6AuYKtZjF4k6Vz" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-    </section>
-
-    <section id="gallery" class="content-section">
-        <h2>Gallery</h2>
-        <div class="gallery-container">
-            <img src="images/photo1.jpg" alt="Description of Photo 1">
-            <img src="images/photo2.jpg" alt="Description of Photo 2">
-            <img src="images/photo3.jpg" alt="Description of Photo 3">
-            <!-- Add more images as needed -->
-        </div>
-    </section>    
-
-    <section id="news" class="content-section">
-        <h2>News</h2>
-        <div id="news-container"></div>
-    </section>
-	
-	<section id="blog" class="content-section">
-        <h2>Blog</h2>
-        <div id="blog-container"></div>
-    </section>	
-
-    <section id="about" class="content-section">
-        <h2>About</h2>
-        <p>About me...</p>
-    </section>
-
-    <section id="contact" class="content-section">
-        <h2>Contact</h2>
-        <form id="contact-form" method="post" action="send_email.php">
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
+    <main>
+        <section id="music" class="content-section active">
+            <h2>Music</h2>
+            <div class="iframe-container">
+                <iframe src="https://open.spotify.com/embed/artist/0rmNOdMGXl6RgWjxutEhNu" width="640" height="480" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
             </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" required></textarea>
-            </div>
-            <button type="submit">Send</button>
-        </form>
-    </section>
+            <p>As a versatile musician, I excel in playing drums, keyboard, bass, guitar, trumpet, ukulele, and kalimba. I am currently creating synth music under my Spotify profile <a href="https://open.spotify.com/artist/0rmNOdMGXl6RgWjxutEhNu" target="_blank">Tom Flach</a>, and producing rock/metal/punk tracks under my alter ego, <a href="https://open.spotify.com/artist/YOUR_EDDY_WOODY_SPOTIFY_URL" target="_blank">Eddy Woody</a>.</p>
+        </section>
 
-    
+        <section id="online-games" class="content-section">
+            <h2>Online Games</h2>
+            <div>
+                <h3>Frog</h3>
+                <p>The Frog game is my inaugural JavaScript creation. This Frogger-inspired game offers an engaging and progressively challenging experience. See how high you can score! <a href="https://tone-malone.github.io/games/frog/frog.html" target="_blank">Play Frog Game</a></p>
+            </div>
+        </section>
+
+        <section id="official-games" class="content-section">
+            <h2>Official Games</h2>
+            <div>
+                <h3>Detective Dart - Lost Relics</h3>
+                <p>Assume the role of Dart, a distinguished Canadian archaeologist, and navigate through a series of puzzles and challenges to uncover hidden relics and solve the mystery. This puzzle platformer draws inspiration from SNES classics, Indiana Jones, and Uncharted.</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL9OkNJHdPlnp7t_OhFwoSZaS0BB7Jt3qD" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <div>
+                <h3>The Adventures of Captain Kane</h3>
+                <p>Join Captain Kane, a revered Navy captain, as he embarks on a thrilling quest to clear his name after being falsely accused of crimes. Prepare for epic naval battles, strategic alliances, and a gripping narrative in this action-packed adventure.</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL9OkNJHdPlnoh0Wsppw6AuYKtZjF4k6Vz" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="gallery" class="content-section">
+            <h2>Gallery</h2>
+            <div class="gallery-container">
+                <img src="images/photo1.jpg" alt="Playing the guitar on stage">
+                <img src="images/photo2.jpg" alt="Working on a coding project">
+                <img src="images/photo3.jpg" alt="A beautiful landscape photograph">
+                <!-- Add more images as needed -->
+            </div>
+        </section>
+
+        <section id="news" class="content-section">
+            <h2>News</h2>
+            <div id="news-container">
+                <!-- News items will be dynamically loaded here -->
+            </div>
+        </section>
+
+        <section id="blog" class="content-section">
+            <h2>Blog</h2>
+            <div id="blog-container">
+                <!-- Blog posts will be dynamically loaded here -->
+            </div>
+        </section>
+
+        <section id="skills" class="content-section">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <h3>Computer Literacy</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>Programming</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>Mechanical Aptitude</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>Troubleshooting</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 85%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="content-section">
+            <h2>About</h2>
+            <p>Hello! I'm Tom Flach, a multi-talented individual passionate about music, programming, and game development. I am proficient in various instruments, including drums, keyboard, bass, guitar, trumpet, ukulele, and kalimba. I create synth music under my Spotify profile <a href="https://open.spotify.com/artist/0rmNOdMGXl6RgWjxutEhNu" target="_blank">Tom Flach</a> and produce rock/metal/punk tracks as <a href="https://open.spotify.com/artist/YOUR_EDDY_WOODY_SPOTIFY_URL" target="_blank">Eddy Woody</a>.</p>
+            <p>My technical skills encompass computer literacy, programming, mechanical aptitude, and troubleshooting. I have developed several games, including the Frog game, Detective Dart - Lost Relics, and The Adventures of Captain Kane, each with unique gameplay and captivating narratives.</p>
+            <p>My career goal is to continually innovate and create immersive experiences through music and game development. Thank you for visiting my website, and I look forward to connecting with you!</p>
+        </section>
+
+        <section id="contact" class="content-section">
+            <h2>Contact</h2>
+            <form id="contact-form" method="post" action="send_email.php">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2024 Tom Flach</p>
         <div class="social-media">
-            <a href="https://www.tiktok.com/@malonetone" target="_blank">Tik-Tok</a>
+            <a href="https://www.tiktok.com/@malonetone" target="_blank">TikTok</a>
             <a href="https://instagram.com/thomaseflach" target="_blank">Instagram</a>
             <a href="https://www.youtube.com/@TomFlach" target="_blank">YouTube</a>
-            <!-- Add more social media links as needed -->
         </div>
     </footer>
 
+    <button id="back-to-top" title="Back to Top">&uarr;</button>
 
     <script src="script.js"></script>
 </body>
