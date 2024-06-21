@@ -261,6 +261,37 @@ footer {
     margin: 0 auto; /* Center the content */
 }
 
+/* Downloads section */
+.downloads-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.download-item {
+    background-color: rgba(128, 128, 128, 0.5);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.download-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: var(--link-color);
+    color: var(--text-color);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+    .download-link:hover {
+        background-color: #104f7f;
+    }
+
 .gallery-container {
     display: flex;
     flex-wrap: wrap;
